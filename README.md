@@ -10,7 +10,11 @@ The component is deliberately dependency-free and tested. In production it would
 
 ```bash
 python3 -m unittest discover -s tests -v
+python3 -m src.app < examples/remediation.jsonl
 ```
+
+This runnable policy demonstrates that automation is only approved when there
+is an owner, approved runbook, actionable signal, and rollback path.
 
 ## Role alignment
 
